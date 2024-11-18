@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster Coffee Responsive Layout</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <style>
+        body {
+            margin: 0px;
+        }
+        #header {
+            background-color: #f2b98f;
+            text-align: center;
+            padding: 20px;
+        }
+        #header img {
+            width: 150px;
+            height: 150px;
+        }
+        #header h1{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: #4f2e17;
+        }
+        .topnav {
+            display: flex;
+            flex-direction: column;
+            background-color: #c98859;
+            text-align: center;
+        }
+        .topnav-dekstop {
+            display: none;
+        }
+        #navigation {
+            display: flex;
+            flex-direction: column;
+        }
+        .topnav a{
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+        }
+        .topnav a:hover {
+            background-color: #4f2e17;
+            color: white;
+        }
+        .content h2 {
+            text-align: center;
+        }
+        
+        .column {
+            width: 100%;
+            text-align: justify;
+        }
+        .column p {
+            margin-inline: 10px;
+        }
+        .sidecolumn {
+            width: 100%;
+            text-align: center;
+        }
+        .sidecolumn img {
+            width: 50%;
+        }
+        .footer {
+            background-color: #f2b98f;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .contact_content a {
+            padding-inline: 0px;
+        }
+        .contact_content h3 {
+            margin: 0px;
+            padding-block: 10px;
+        }
+        .footer a:hover {
+            background-color: #4f2e17;
+            color: white;
+        }
+        .footer h2 {
+            background-color: #c98859;
+            margin: 0px;
+            padding-block: 10px;
+            text-align: center;
+        }
+        .contact_content, .cus_content, .com_content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .com_content_row {
+            display: flex;
+            flex-direction: column;
+        }
+        @media only screen and (min-width:600px) {
+            #navigation {
+                flex-direction: row;
+                width: 100%;
+            }
+            #navigation a {
+                width: 50%;
+            }
+            .row {
+                display: flex;
+                margin: 10px;
+            }
+            .column {
+                width: 70%;
+                text-align: justify;
+            }
+            .column p {
+                margin-inline: 10px;
+                margin-block: 0px;
+            }
+            .sidecolumn {
+                width: 30%;
+                text-align: center;
+            }
+            .sidecolumn img {
+                width: 100%;
+            }
+            #operating_time {
+                display: flex;
+                flex-direction: row;
+            }
+            #operating_time h3 {
+                width: 50%;
+            }
+            .cus_content {
+                flex-direction: row;
+            }
+            .cus_content a {
+                width: 50%;
+            }
+            .com_content a {
+                width: 20%;
+            }
+            .com_content_row {
+                flex-direction: row;
+                width: 100%;
+            }
+            #com_content_row1 a{
+                width: 33.33%;
+            }
+            #com_content_row2 a{
+                width: 50%;
+            }
+        }
+        @media only screen and (min-width: 800px) {
+            .topnav {
+                display: none;
+            }
+            .topnav-dekstop {
+                display: block;
+            }
+            .topnav-dekstop {
+                background-color: #c98859;
+                text-align: center;
+                padding: 20px;
+            }
+            .topnav-dekstop a{
+                color: black;
+                text-decoration: none;
+                padding: 20px;
+            }
+            .topnav-dekstop a:hover {
+                background-color: #4f2e17;
+                color: white;
+            }
+            #signCoffee .row {
+                flex-direction: row-reverse;
+            }
+            .footer {
+                display: flex;
+            }
+            .contactUs, .customer, .company {
+                width: 33.33%;
+                padding: 10px;
+            }
+            #operating_time {
+                flex-direction: column;
+            }
+            #operating_time h3 {
+                width: 100%;
+            }
+            .contact_content, .cus_content, .com_content {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .cus_content a {
+                width: 100%;
+                padding-inline: 0px;
+            }
+            .com_content_row {
+                flex-direction: column;
+            }
+            .com_content_row a {
+                padding-inline: 0px;
+            }
+            #com_content_row1 a{
+                width: 100%;
+            }
+            #com_content_row2 a{
+                width: 100%;
+            }
+            .footer h2 {
+                background-color: #f2b98f;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="image/logo.png" alt="logo">
+            <h1>Monster Coffee</h1>
+        </div>
+        <div class="topnav">
+            <div id="navigation">
+                <a href="#latteArt">Latte Art</a>
+                <a href="#signCoffee">Signature Coffee</a>
+            </div>
+            <a href="#roast">Roasting</a>
+        </div>  
+        <div class="topnav-dekstop">
+            <a href="#latteArt">Latte Art</a>
+            <a href="#signCoffee">Signature Coffee</a>
+            <a href="#roast">Roasting</a>
+        </div>
+        <div class='content' id="latteArt">
+            <h2>Latte Art</h2>
+            <div class="row">
+                <div class="sidecolumn">
+                    <img src="image/latteArt.webp" alt="Combo Latte Art">
+                </div>
+                <div class="column">
+                    <p>Latte art is a method of preparing coffee created by pouring microfoam into a shot of espresso and resulting in a pattern or design on the surface of the latte. It can also be created or embellished by simply "drawing" in the top layer of foam. Latte art is particularly difficult to create consistently, due to the demanding conditions required of both the espresso shot and milk. This, in turn, is limited by the experience of the barista and quality of the espresso machine. The term also applies to other beverages containing milk foam, such as cappuccino and hot chocolate.</p>
+                </div>
+            </div>
+        </div> 
+        <div class='content' id="signCoffee">
+            <h2>Signature Coffee</h2>
+            <div class="row">
+                <div class="sidecolumn">
+                    <img src="image/signatureCoffee.webp" alt="Signature Coffee">
+                </div>
+                <div class="column" id="column1">
+                    <p>A Signature drink is any unique or original drink that expresses the nature of the person or establishment creating it.
+                    Signature drinks often incorporate local ingredients and culture. They can be fashioned or designed to represent a theme or color. Many cultures, states, cities, restaurants, bars, etc. have Signature drinks that represent the customs and prides of the people who live in the area or near the establishments boasting the unique beverage.</p>
+                </div>
+            </div>
+        </div>
+        <div class='content' id="roast">
+            <h2>Roasting</h2>
+            <div class="row">
+                <div class="sidecolumn">
+                    <img src="image/roastery.webp" alt="Roasting">
+                </div> 
+                <div class="column" id="roasting">
+                    <p>Coffee roasting begins with green coffee beans, which themselves have been processed and dried. Temperatures are raised progressively from about 180 to 250 °C (356 to 482 °F) and heated for anywhere from 7 to 20 minutes, depending on the type of roast, light or dark, desired.</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contactUs">
+            <h2>Contact Us</h2>
+            <div class="contact_content">
+                <h3>+6012 - 345 - 6789</h3>
+                <a href="mailto:contactUs@monstercoffee.com">contactUs@monstercoffee.com</a>
+                <div id="operating_time">
+                    <h3>Mon - Thurs 9am - 7pm</h3>
+                    <h3>Fri - Sun 9am - 10pm</h3>
+                </div>
+            </div>
+        </div>
+        <div class="customer">
+            <h2>Customers</h2>
+            <div class="cus_content">
+                <a href="#">FAQ</a>
+                <a href="#">Customer Feedback</a>
+            </div>
+        </div>
+        <div class="company">
+            <h2>Company</h2>
+            <div class="com_content">
+                <div class="com_content_row" id="com_content_row1">
+                    <a href="#">About Us</a>
+                    <a href="#">Career</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="com_content_row" id="com_content_row2">
+                    <a href="#">Terms</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
